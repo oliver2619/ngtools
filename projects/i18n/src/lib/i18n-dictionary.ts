@@ -1,0 +1,1 @@
+export type I18nDictionary = Readonly<Record<string, string>>;
