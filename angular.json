@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "forms": {
-      "projectType": "library",
-      "root": "projects/forms",
-      "sourceRoot": "projects/forms/src",
-      "prefix": "pt",
-      "architect": {
-        "build": {
-          "builder": "@angular/build:ng-packagr",
-          "options": {
-            "project": "projects/forms/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/forms/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/forms/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular/build:karma",
-          "options": {
-            "tsConfig": "projects/forms/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
-    },
     "i18n": {
       "projectType": "library",
       "root": "projects/i18n",
